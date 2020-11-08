@@ -1,0 +1,34 @@
+h1 {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+}
+
+.art {
+    margin: auto;
+}
+
+td {
+    width: 116px;
+    height: 209px;
+    border: 5px solid white;
+}
+
+#one {
+    background-color: #1C3144;
+}
+
+#two {
+    background-color: #D00000;
+}
+
+#three {
+    background-color: #FFBA08;
+}
+
+#four {
+    background-color: #A2AEBB;
+}
+
+#five {
+    background-color: #3F88C5;
+}
