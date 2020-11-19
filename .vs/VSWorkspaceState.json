@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\django1",
+    "\\django1\\app1",
+    "\\django1\\django1",
+    "\\DJANGO_COURSE_1.xx",
+    "\\DJANGO_COURSE_1.xx\\Django_Level_One",
+    "\\DJANGO_COURSE_1.xx\\Django_Level_One\\first_project",
+    "\\DJANGO_COURSE_1.xx\\Django_Level_One\\first_project\\first_app",
+    "\\DJANGO_COURSE_1.xx\\Django_Level_One\\first_project\\first_project"
+  ],
+  "SelectedNode": "\\django1\\django1\\urls.py",
+  "PreviewInSolutionExplorer": false
+}

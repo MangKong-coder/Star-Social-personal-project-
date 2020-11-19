@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\django1",
+    "\\django1\\app1",
+    "\\django1\\django1",
+    "\\django1\\static",
+    "\\django1\\static\\css",
+    "\\django1\\static\\images",
+    "\\django1\\templates",
+    "\\django1\\templates\\app1"
+  ],
+  "SelectedNode": "\\django1\\population-script.py",
+  "PreviewInSolutionExplorer": false
+}
