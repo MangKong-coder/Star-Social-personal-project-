@@ -1,7 +1,18 @@
 body {
-    text-align:center;
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+.djangtwo {
+    
+    padding-left: auto;
+     padding-right: auto;
 }
 
 h1 {
-    font-family: Arial;
+    color: rgb(171, 233, 241);
+}
+
+table {
+    border: 1px solid black;
 }

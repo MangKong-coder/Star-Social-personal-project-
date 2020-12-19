@@ -1,0 +1,15 @@
+body {
+    font-family: Courier;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(171, 233, 241);
+}
+
+table,th,td {
+    border: 1px solid black;
+    padding-left: auto;
+     padding-right: auto;
+
+}

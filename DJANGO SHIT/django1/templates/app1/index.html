@@ -2,12 +2,31 @@
 {% load static %}
 <html>
 <head>
-    <link rel="stylesheet" href="{% static 'css\custom.css' %}">
-<title>Django Page</title>
+    <link rel="stylesheet" href="{% static 'css\django.css' %}">
+    <title>Django Level Two</title>
 </head>
 <body>
-    <h1>This a picture of Django Reinhardt</h1>
-    <img src="{% static 'images/djangoguitar.jpg' %}" alt="">
-    
+    <p>Hello Welcome to Django Page</p>
+
+    <div class="djangtwo">
+        {% if accrecord %}
+        <table>
+            <thead>
+                <th>Site Name</th>
+                <th>Date accessed</th>
+            </thead>
+
+            {% for acc in accrecord %}
+            <tr>
+                <td>{{ acc.name }}</td>
+                <td>{{ acc.date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>There's a Problem!</p>
+        {% endif %}
+    </div>
+
 </body>
 </html>

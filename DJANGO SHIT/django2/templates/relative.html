@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load cumfil %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+</head>
+<body>
+    <h1>Relative</h1>
+    <a href="{% url 'app2:other' %}">Other</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <h1>{{ ind|change:'Jared' }}</h1>
+    {{ number|plus }}
+</body>
+</html>

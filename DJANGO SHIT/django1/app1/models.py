@@ -1,6 +1,13 @@
 from django.db import models
 
 # Create your models here.
+class UserInfo(models.Model):
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    bday = models.DateField()
+    def __str__(self):
+        return self.name
+
 
 class User(models.Model):
     usr = models.IntegerField(unique=True)

@@ -1,7 +1,19 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
-d = {'Help_Page': ''}
-def index(requests):
-    return render(requests, 'AppTwo/help.html', d)
+from AppTwo.models import User
+from . import forms
 # Create your views here.
+
+def home(request):
+    h = {'Home_Page': ''}
+    return render(request, 'home.html', h)
+
+def user(request):
+    form = forms.User()
+
+    if request.method == 'POST':
+        form = forms.User(request.POST)
+
+        if form.is_valid():
+            p = form.save()
+            print('VALIDATION SUCCESS')
+    return render(request, 'user.html', {'forms':form})
