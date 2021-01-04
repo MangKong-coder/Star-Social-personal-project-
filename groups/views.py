@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse
-from django.views.generic import CreateView, UpdateView, TemplateView, DetailView, ListView, DeleteView
+from django.views.generic import CreateView, UpdateView, TemplateView, DetailView, ListView, DeleteView, RedirectView
 from .models import Group, GroupMembers
 # Create your views here.
 
@@ -14,4 +14,9 @@ class GroupDetailView(DetailView):
 
 class GroupListView(ListView):
     model = Group
+
+class JoinGroup(LoginRequiredMixin, RedirectView):
+    pass
+
+class LeaveGroup(LoginRequiredMixin,)
 
