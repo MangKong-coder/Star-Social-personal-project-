@@ -1,6 +1,7 @@
-{% extends 'group/group_base.html' %}
+{% extends 'groups/group_base.html' %}
 
 {% block pregroup %}
+<div class="container">
     <h1>{{group.name}} </h1>
     <h2>Member count: {{group.members.count}}</h2>
 
@@ -18,6 +19,8 @@
         {% endif %}
             
     </div>
+</div>
+    
 {% endblock  %}
 
 

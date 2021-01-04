@@ -3,12 +3,17 @@
 
 
 {% block group_content %}
+<div class="container">
     <h1>Create a Group</h1>
 
-    <form action="{% url groups:create %} " method="post" id=form>
+    <form action="{% url 'groups:group_create' %} " method="post" id=form>
         {% csrf_token %}
         {% bootstrap_form form %}
-        <input type="submit" class="btn btn-lg btn-success" value="Create">
+        {% buttons %}
+  		<button type="submit" class="btn btn-primary btn-large">Create</button>
+  	{% endbuttons %}
     </form>
+</div>
+    
 {% endblock  %}
     

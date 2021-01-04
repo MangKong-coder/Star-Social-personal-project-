@@ -7,7 +7,7 @@ from django import template
 # Create your models here.
 
 User = get_user_model()
-registr = template.Library()
+register = template.Library()
 
 class Group(models.Model):
     name = models.CharField(max_length=200, unique=True)
@@ -32,11 +32,11 @@ class Group(models.Model):
 
 
 class GroupMembers(models.Model):
-    group = models.ForeignKey(Group, related_name='membership')
-    user = models.ForeignKey(User, related_name='user_groups')
+    group = models.ForeignKey(Group, related_name='membership', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='user_groups', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.user.username
 
     class Meta:
-        unique_together = ('group', 'user')
+        unique_together = ['group', 'user']
